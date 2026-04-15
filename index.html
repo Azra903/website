@@ -1,11 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Laravel Site - Build Professional Laravel Applications</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="c:\Users\HP\Downloads\image 3.png" alt="Need Laravel Site Logo" class="logo-img">
+            </div>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <div class="social-links">
+                    <a href="tel:+1234567890" title="Call us"><i class="bi bi-telephone"></i></a>
+                    <a href="mailto:info@laravel.com" title="Email us"><i class="bi bi-envelope"></i></a>
+                </div>
+                <a href="#quote" class="quote-btn">Get Quote</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <!-- Left Content -->
+            <div class="hero-left">
+                <div class="logo-badge">
+                    <div class="badge-dot"></div>
+                    <i class="bi bi-code-slash"></i>
+                    <div class="badge-text">
+                        <strong>NEED LARAVEL SITE</strong>
+                        <span>Professional Laravel Development</span>
+                    </div>
+                </div>
+                
+                <h1 class="hero-title">Build Professional <span class="highlight">Laravel Applications</span> <br>Fast & Secure</h1>
+                
+                <div class="feature-badges">
+                    <span class="badge badge-primary"><i class="fa-solid fa-bolt"></i> Rapid Development</span>
+                    <span class="badge badge-secondary"><i class="fa-solid fa-shield-halved"></i> Enterprise Security</span>
+                </div>
+                
+                <p class="hero-description">Transform your business ideas into <span class="text-highlight">scalable Laravel application.</span> Our experienced team delivers high-quality, maintainable code that grows with your business needs.</p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Get Custom Proposal →</button>
+                    <button class="btn btn-secondary">▶ Watch Demo</button>
+                </div>
+
+                <div class="stats-container">
+                    <div class="stat">
+                        <h3 class="stat-number">200+</h3>
+                        <p class="stat-label">Projects</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat-number">98%</h3>
+                        <p class="stat-label">Success</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat-number">5+</h3>
+                        <p class="stat-label">Years</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat-number">24/7</h3>
+                        <p class="stat-label">Support</p>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <div class="rating-section">
+                    <span class="stars">★★★★★</span>
+                    <strong>5.0 Rating</strong>
+                    <span class="client-count">from 200+ clients</span>
+                </div>
+            </div>
+
+            <!-- Right Content - Dashboard Card -->
+            <div class="hero-right">
+                <div class="dashboard-wrapper">
+                    <!-- Quality Assured Badge -->
+                    <div class="quality-badge">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <div>
+                            <strong>Quality Assured</strong>
+                            <span>100% Tested</span>
+                        </div>
+                    </div>
+
+                    <!-- Dashboard Card -->
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <div class="header-left">
+                                <div class="dot dot-red"></div>
+                                <div class="dot dot-yellow"></div>
+                                <div class="dot dot-green"></div>
+                                <span>laravel-project</span>
+                            </div>
+                            <span class="version-badge">v11.0</span>
+                        </div>
+
+                        <div class="terminal">
+                            <div class="terminal-line">
+                                <span class="cmd-path">$ composer install</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="cmd-blue">$ composer install</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="cmd-success">✓ Dependencies installed</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="cmd-success">✓ Database connected</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="cmd-success">✓ php artisan serve</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="cmd-success">✓ Application running</span>
+                            </div>
+                        </div>
+
+                        <!-- Metrics -->
+                        <div class="metrics-grid">
+                            <div class="metric-card metric-response">
+                                <i class="bi bi-globe"></i>
+                                <p class="metric-label">RESPONSE</p>
+                                <p class="metric-value">12ms</p>
+                            </div>
+                            <div class="metric-card metric-uptime">
+                                <i class="bi bi-graph-up"></i>
+                                <p class="metric-label">UPTIME</p>
+                                <p class="metric-value">99.9%</p>
+                            </div>
+                            <div class="metric-card metric-queries">
+                                <i class="bi bi-inbox"></i>
+                                <p class="metric-label">QUERIES</p>
+                                <p class="metric-value">3ms</p>
+                            </div>
+                        </div>
+
+                        <!-- Features List -->
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Modern Laravel Architecture</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Automated Testing & CI/CD</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Performance Optimization</span>
+                            </div>
+                        </div>
+
+                        <!-- Laravel Version Badge -->
+                        <div class="laravel-badge">
+                            <i class="bi bi-code-slash"></i>
+                            <div>
+                                <strong>Laravel 12</strong>
+                                <span>Latest Version</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative Elements -->
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </section>
+
+    <section class="client">
+        <div class="heading"><h1> &#8226 TRUSTED BY INDUSTRY LEADERS</h1></div>
+        <h1> <span style="color: black;">Our</span> Technology Stack</h1>
+        <h5>TRUSTED BY INDUSTRY LEADERS</h5>
+        <p style="font-size: large;">We use modern relaiable technolgy to build scalable application that grow with your business</p></style>
+        <div class="states">
+            <div class="state">
+                
+                <span>50+</span><br><p> Enterprice client</p>
+            
+            </div>
+            <div class="state">
+                
+                <span>150+</span><p>Startups Launched</p>
+            </div>
+            <div class="state">
+                
+                <span>80+</span><p>E-commerce Sites</p>
+            </div>
+            <div class="state">
+                
+                <span>200+</span><p>Custom Solutions</p>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="card">
+            <div class="icon">L</div>
+            <h3>Laravel</h3>
+            <p class="red">Backened Framework</p>
+            <small>Modern PHP Framework</small>
+             </div>
+
+                <div class="card">
+                    <div class="icon">R</div>
+                    <h3>React</h3>
+                    <p class="red">Frontend Library</p>
+                    <small>JavaScript UI Library</small>
+                   </div>
+            
+                    <div class="card">
+                        <div class="icon">V</div>
+                        <h3>Vue.js</h3>
+                        <p class="red">Frontend Framework</p>
+                        <small>Progressive Framework</small>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">N</div>
+                        <h3>Next.js</h3>
+                        <p class="red">Full-stack Framework</p>
+                        <small>React Meta-framework</small>
+
+                    </div>
+                    <div class="card">
+                        <div class="icon">M</div>
+                        <h3>MySQL</h3>
+                        <p class="red">Database</p>
+                        <small>Relational Database</small>
+
+                         </div>
+
+                         <div class="card">
+                            <div class="icon">P</div>
+                            <h3>Laravel Cloud</h3>
+                            <p class="red">Server Less</p>
+                            <small>Advanced Database</small>
+
+                             </div>
+                             <div class="card">
+                                <div class="icon">A</div>
+                                <h3>AWS</h3>
+                                <p class="red">Cloud Platform</p>
+                                <small>Cloud Infrastructure</small>
+
+                             </div>
+                             <div class="card">
+                                <div class="icon">L</div>
+                                <h3>Laravel Forge </h3>
+                                <p class="red">Deployment</p>
+                                <small>Containerization</small>
+                                 
+                             </div>
+                             
+
+                        
+
+        </div>
+
+        <section class="cert-section">
+    <h2><span>Certified</span> Expertise</h2>
+    <p class="subtitle">Professional certifications and proven track record</p>
+
+    <div class="cert-container">
+
+        <div class="cert-card">
+            <div class="icon red">L</div>
+            <h3>Laravel Certified</h3>
+            <p>Official Laravel framework expertise and best practices</p>
+        </div>
+
+        <div class="cert-card">
+            <div class="icon blue">AWS</div>
+            <h3>AWS Certified</h3>
+            <p>Cloud solutions architect for scalable deployments</p>
+        </div>
+
+        <div class="cert-card">
+            <div class="icon green">ISO</div>
+            <h3>ISO 27001</h3>
+            <p>Security management and compliance standards</p>
+        </div>
+
+    </div>
     
+</section>
+
+
+
+<div class="stats-bar">
+    <div class="item">
+        <span class="dot green"></span>
+        <p>99.9% Uptime</p>
+    </div>
+
+    <div class="item">
+        <span class="dot blue"></span>
+        <p>24/7 Support</p>
+    </div>
+
+    <div class="item">
+        <span class="dark dot"></span>
+        <p>Enterprise Security</p>
+    </div>
+</div>
+<section class="main">
+    <h1 style="color: black;">Trusted<span> Laravel Development</span> Company</h1>
+  <p class="subtitle">
+    With over 5 years of Laravel expertise, we've helped 200+ businesses build scalable,
+   <br> secure web applications that drive growth and innovation.
+  </p>
+  <div class="features">
+
+    <div class="box">
+      <div class="icon">🛡</div>
+      <h3>Enterprise Security</h3>
+      <p>Bank-level security protocols and Laravel best practices</p>
+    </div>
+    <div class="box">
+        <div class="icon"></div>
+        <h3>Certified Developers</h3>
+        <p>Laravel certified team with 5+
+ years average experience</p>
+
+    </div>
+    <div class="box">
+        <div class="icon"></div>
+        <h3>On-Time Delivery</h3>
+        <p>98% projects delivered on schedule
+with quality assurance</p>
+
+    </div>
+    <div class="box">
+        <div class="icon"></div>
+        <h3>24/7 Support</h3>
+        <p>Dedicated support team available
+round the clock</p>
+
+    </div>
+    
+
+<div class="cta">
+    <div class="left">
+        <h2>Ready to Build Something Amazing?</h2>
+        <p>Let's discuss your Laravel project and create a custom solution that
+                exceeds your expectations.</p>
+                <button class="btn">Start Your Project</button>
+
+    </div>
+    <div class="right">
+        <div class="image-box">
+            <img src="C:\Users\HP\Documents\GitHub\website\image 2.png" alt="">
+
+        </div>
+
+    </div>
+</div>
+
+</section>
+</body>
+</html>
+
+
+        
+  
+
+    
+  
+
+   
 </body>
 </html>
